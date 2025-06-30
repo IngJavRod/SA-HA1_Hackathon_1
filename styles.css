@@ -416,3 +416,82 @@ body {
         max-width: 100%;
     }
 }
+
+/* --------------------- Menu Desplegable ------------------------*/
+/* Enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Hover en los enlaces de navegación */
+.nav-links li a:hover {
+    color: #f0f0f0;
+    border-bottom: 2px solid #3a3e4e;
+}
+
+/* Dropdown (Espacio vertical)*/   
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1c23;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  border-radius: 5px; /* Mantén esto si quieres esquinas redondeadas */
+  z-index: 1000;
+  overflow: hidden; /* Asegura que el fondo cubra bien */
+  
+}
+
+.dropdown-content li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de los enlaces dentro del dropdown (Espacio Horizontal) */   
+.dropdown-content a {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  background-color: #1a1c23;     /* Fondo base */
+  box-sizing: border-box;      /* Evita que el padding se desborde */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover dentro del dropdown */
+.dropdown-content a:hover {
+  background-color: #333;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Añadir efecto de sombreado en el enlace desplegado al pasar el cursor */
+.dropdown-content a:focus, .dropdown-content a:hover {
+  background-color: #3a3e4e; /* Fondo suave al pasar por encima */
+  color: #000; /* Cambiar texto a negro */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
