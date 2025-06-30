@@ -260,30 +260,69 @@ body {
 
 
 /* Contactanos */
-.contact-form {
-    background-color: #593b6d;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+.contact-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 60px 20px;
+    border-radius: 12px;
     margin-top: 50px;
 }
-.contact-form h2 {
-    color: #007bff;
-    margin-bottom: 30px;
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #18415a;
 }
-.form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
 }
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    transition: all 0.3s ease;
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+
+.contact-card .form-label {
+    color: #18415a;
+    font-weight: 600;
 }
+
+.contact-card .form-control {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-card .form-control:focus {
+    border-color: #18415a;
+    box-shadow: 0 0 0 0.2rem rgba(24, 65, 90, 0.25);
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-contact {
+    background-color: #18415a;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: #122c40;
+    transform: translateY(-2px);
+}
+
 
 /* ------------- Carrusel --------------- */
 
