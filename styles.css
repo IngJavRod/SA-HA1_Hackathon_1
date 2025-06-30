@@ -8,8 +8,10 @@
 /* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000; /* fondo negro */
-    color: #fff; /* texto blanco */
+    background-color: #000;
+    /* fondo negro */
+    color: #fff;
+    /* texto blanco */
     line-height: 1.6;
 }
 
@@ -19,8 +21,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #111; /* negro oscuro para navbar */
-    border-bottom: 2px solid #fff; /* línea blanca */
+    background-color: #111;
+    /* negro oscuro para navbar */
+    border-bottom: 2px solid #fff;
+    /* línea blanca */
 }
 
 /* Logo */
@@ -65,6 +69,112 @@ body {
     color: #000;
 }
 
+/* Hero Section */
+.hero-section {
+    /* Imagen HD deportiva libre de derechos (puedes cambiar por tu propia imagen) */
+    background: url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    height: 70vh;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Capa oscura para mejorar legibilidad */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* Contenido encima de la capa oscura */
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Título */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.3s;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.6s;
+}
+
+/* Botón mejorado */
+.hero-btn {
+    font-size: 1.3rem;
+    padding: 0.85rem 3rem;
+    color: #000;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.6);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.9s;
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: linear-gradient(90deg, #FFA500, #FFD700);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.8);
+    color: #fff;
+    outline: none;
+}
+
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        height: 50vh;
+        padding: 0 1rem;
+    }
+
+    .hero-btn {
+        font-size: 1.1rem;
+        padding: 0.7rem 2.5rem;
+    }
+}
+
+
 /* Grid de productos */
 .products-grid {
     display: grid;
@@ -72,7 +182,7 @@ body {
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 4rem auto;
 }
 
 /* Cada producto */
@@ -133,5 +243,18 @@ body {
 
     .product-item img {
         height: 150px;
+    }
+
+    .hero-section {
+        height: 50vh;
+        padding: 0 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
     }
 }
