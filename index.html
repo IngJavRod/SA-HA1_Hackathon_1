@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDRAM Sport</title>
     <!-- Aquí para enlazar el CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -90,5 +91,113 @@
    
 
     <script src="script.js"></script>
+<!-- Botón para desplegar el formulario -->
+<div class="text-center my-4">
+<button class="btn btn-jdram" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm">
+  Contáctanos
+</button>
+</div>
+
+<!-- Formulario oculto al inicio -->
+<div class="collapse" id="contactForm">
+    <div class="card card-body">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+    </div>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="footer pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Newsletter -->
+            <div class="col-lg-4 col-md-6">
+                <h3 class="footer-title">Noticias</h3>
+                <p class="mb-4">Suscríbete a nuestro boletín para recibir actualizaciones, novedades y ofertas exclusivas.</p>
+            </div>
+
+            <!-- Newsletter Derecha -->
+            <div class="col-lg-4 col-md-6 ms-auto text-end">
+                    <form class="mb-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Ingresa tu email">
+                            <button class="btn btn-subscribe text-white" type="submit">Suscribete</button>
+                        </div>
+                    </form>
+                    <p class="small">Al suscribirse, acepta nuestra Política de privacidad y da su consentimiento para recibir actualizaciones.</p>
+                </div>
+        </div>
+        <div class="footer-separator"></div>
+<div class="container">
+    <div class="row g-4">
+        <!-- Company Info con enlaces debajo -->
+        <div class="col-lg-4 col-md-6">
+            <h3 class="footer-title">¡Siguenos en nuestras redes!</h3>
+            <div class="social-links mb-4">
+                <a href="#"><img src="Pictures/RedesSociales/icons8-facebook-50.png" alt="Facebook" width="32"></a>
+                <a href="#"><img src="Pictures/RedesSociales/icons8-x-50.png" alt="Twitter" width="32"></a>
+                <a href="#"><img src="Pictures/RedesSociales/icons8-instagram-50.png" alt="Instagram" width="32"></a>
+                <a href="#"><img src="Pictures/RedesSociales/icons8-linkedin-50.png" alt="LinkedIn" width="32"></a>
+                <a href="#"><img src="Pictures/RedesSociales/icons8-youtube-50.png" alt="YouTube" width="32"></a>
+            </div>
+            <!-- Lista de enlaces debajo -->
+            <ul class="footer-links">
+
+
+            </ul>
+        </div>
+
+        <!-- Atención a cliente -->
+        <div class="col-lg-4 col-md-6">
+            <h3 class="footer-title">Atención a cliente</h3>
+            <ul class="footer-links">
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="col-lg-4 col-md-6">
+            <h3 class="footer-title">Soporte</h3>
+            <ul class="footer-links">
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Terminos de servicios</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom mt-5">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">&copy; 2025 JDRAM SPORT. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a href="#">JDRAM SPORT</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
