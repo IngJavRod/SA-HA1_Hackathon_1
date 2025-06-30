@@ -1,3 +1,125 @@
+/* Footer */
+.footer {
+            background: linear-gradient(145deg, #1a1c23, #242730);
+            color: #ffffff;
+        }
+        
+        .footer-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 30px;
+            height: 2px;
+            background: #18415a;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: #b4b6bb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            color: #ffffff;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #18415a;
+            transform: translateY(-3px);
+        }
+        
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.705);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #ffffff;
+        }
+        
+        .newsletter-input:focus {
+            background: #18415a;
+            border-color:#ffffff;
+            color: #ffffff;
+            box-shadow: none;
+        }
+        
+        .btn-subscribe {
+            background: #000000;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-subscribe:hover {
+            background: #18415a;
+            transform: translateY(-2px);
+        }
+        
+        .footer-bottom {
+            background: rgba(0,0,0,0.2);
+        }
+        
+        .footer-bottom a {
+            color: #18415a;
+            text-decoration: none;
+        }
+        
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+        .footer-separator {
+        height: 2px;
+        background: linear-gradient(to right, #18415a, #6c6ce7);
+        margin: 40px 0;
+        border-radius: 1px;
+}
+
+        body {
+    background-color: #f8f9fa;
+    color: #ffffff;
+}
+
+/* Contactanos */
+.btn-jdram {
+        background-color: #000000;
+        color: white;
+        border: none;
+}
+
+.btn-jdram:hover {
+        background-color: #18415a;
+        transform: translateY(-2px);
+}
 /* Reset básico */
 * {
     margin: 0;
