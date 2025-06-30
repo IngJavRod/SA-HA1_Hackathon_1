@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Deportiva</title>
-    <!-- Aqui para enlazar el CSS -->
+    <title>JDRAM Sport</title>
+    <!-- Aquí para enlazar el CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Barra de navegacion -->
+    <!-- Barra de navegación -->
     <nav class="navbar">
-        <!-- Logo de la pagina -->
+        <!-- Logo de la página -->
         <div class="logo">
             <img src="Pictures/Logo.png" alt="Logo">
         </div>
@@ -33,14 +33,39 @@
         </div>
     </nav>
 
-    <!-- Regillas -->
+<!--------------------- Carrusel con texto en la mitad ----------------------->
+<!-- Carrusel con texto en la mitad -->
+<div class="carousel-container">
+    <!-- Carrusel (mitad izquierda) -->
+    <div class="carousel">
+        <div class="carousel-slide">
+            <img src="Pictures/Carrusel_Ejemplo1.png" alt="Correr">
+        </div>
+        <div class="carousel-slide">
+            <img src="Pictures/Carrusel_Ejemplo3.jpg" alt="Entrenamiento">
+        </div>
+        <div class="carousel-slide">
+            <img src="Pictures/Carrusel_Ejemplo2.png" alt="Urban">
+        </div>
+    </div>
+    
+    <!-- Texto (mitad derecha) -->
+    <div class="text-content">
+        <h2>Bienvenido a JDRAM Sport</h2>
+        <p>La mejor tienda deportiva en línea con productos exclusivos para ti. Encuentra lo último en ropa deportiva, calzado y accesorios.</p>
+        <a href="#">Explorar más</a>
+    </div>
+</div>
+
+
+
+    <!-- Regillas (productos) -->
     <div class="products-grid">
         <!-- Producto 1 -->
         <div class="product-item">
             <img src="Pictures/Correr.jpg" alt="Correr">
             <div class="categories">
-                <span class="category">Rebajas en tenis ropa y accesoriso</span>
-        
+                <span class="category">Rebajas en tenis ropa y accesorios</span>
             </div>
         </div>
 
@@ -57,11 +82,13 @@
             <img src="Pictures/Urban.jpg" alt="Urban">
             <div class="categories">
                 <span class="category">Que la moda no se detenga</span>
-                        
-            
             </div>
         </div>
     </div>
 
+    <!-- Botones de navegación del carrusel -->
+   
+
+    <script src="script.js"></script>
 </body>
 </html>
