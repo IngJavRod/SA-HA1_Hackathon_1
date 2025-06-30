@@ -66,8 +66,8 @@
         }
         
         .newsletter-input:focus {
-            background: #18415a
-            border-color: #ffffff;
+            background: #18415a;
+            border-color:#ffffff;
             color: #ffffff;
             box-shadow: none;
         }
