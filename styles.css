@@ -1,125 +1,126 @@
 /* Footer */
 .footer {
-            background: linear-gradient(145deg, #1a1c23, #242730);
-            color: #ffffff;
-        }
-        
-        .footer-title {
-            color: #fff;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-        
-        .footer-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 30px;
-            height: 2px;
-            background: #18415a;
-        }
-        
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 1rem;
-        }
-        
-        .footer-links a {
-            color: #b4b6bb;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: #ffffff;
-            padding-left: 5px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.1);
-            color: #ffffff;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            background: #18415a;
-            transform: translateY(-3px);
-        }
-        
-        .newsletter-input {
-            background: rgba(255, 255, 255, 0.705);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: #ffffff;
-        }
-        
-        .newsletter-input:focus {
-            background: #18415a;
-            border-color:#ffffff;
-            color: #ffffff;
-            box-shadow: none;
-        }
-        
-        .btn-subscribe {
-            background: #000000;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-subscribe:hover {
-            background: #18415a;
-            transform: translateY(-2px);
-        }
-        
-        .footer-bottom {
-            background: rgba(0,0,0,0.2);
-        }
-        
-        .footer-bottom a {
-            color: #18415a;
-            text-decoration: none;
-        }
-        
-        .footer-bottom a:hover {
-            color: #ffffff;
-        }
-
-        .footer-separator {
-        height: 2px;
-        background: linear-gradient(to right, #18415a, #6c6ce7);
-        margin: 40px 0;
-        border-radius: 1px;
+    background: linear-gradient(145deg, #1a1c23, #242730);
+    color: #ffffff;
 }
 
-        body {
+.footer-title {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background: #18415a;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #b4b6bb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #18415a;
+    transform: translateY(-3px);
+}
+
+.newsletter-input {
+    background: rgba(255, 255, 255, 0.705);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.newsletter-input:focus {
+    background: #18415a;
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-subscribe {
+    background: #000000;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background: #18415a;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-bottom a {
+    color: #18415a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+.footer-separator {
+    height: 2px;
+    background: linear-gradient(to right, #18415a, #6c6ce7);
+    margin: 40px 0;
+    border-radius: 1px;
+}
+
+body {
     background-color: #f8f9fa;
     color: #ffffff;
 }
 
 /* Contactanos */
 .btn-jdram {
-        background-color: #000000;
-        color: white;
-        border: none;
+    background-color: #000000;
+    color: white;
+    border: none;
 }
 
 .btn-jdram:hover {
-        background-color: #18415a;
-        transform: translateY(-2px);
+    background-color: #18415a;
+    transform: translateY(-2px);
 }
+
 /* Reset básico */
 * {
     margin: 0;
@@ -130,8 +131,10 @@
 /* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #18415a; /* fondo negro */
-    color: #fff; /* texto blanco */
+    background-color: #18415a;
+    /* fondo negro */
+    color: #fff;
+    /* texto blanco */
     line-height: 1.6;
 }
 
@@ -141,13 +144,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #000; /* negro oscuro para navbar */
-    border-bottom: 2px solid #fff; /* línea blanca */
+    background-color: #000;
+    /* negro oscuro para navbar */
+    border-bottom: 2px solid #fff;
+    /* línea blanca */
 }
 
 /* Logo */
 .logo img {
-    max-height: 120px; 
+    max-height: 120px;
     width: auto;
 }
 
@@ -267,19 +272,23 @@ body {
     padding: 30px;
     margin-top: 50px;
 }
+
 .contact-form h2 {
     color: #007bff;
     margin-bottom: 30px;
 }
+
 .form-control:focus {
     border-color: #007bff;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
     transition: all 0.3s ease;
 }
+
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #0056b3;
@@ -291,7 +300,8 @@ body {
 .carousel-container {
     display: flex;
     width: 100%;
-    height: 400px; /* Altura fija, puedes ajustarla */
+    height: 400px;
+    /* Altura fija, puedes ajustarla */
     background-color: #111;
 }
 
@@ -327,7 +337,8 @@ body {
 .text-content {
     width: 50%;
     padding: 20px;
-    background-color: #111; /* Fondo oscuro para el texto */
+    background-color: #111;
+    /* Fondo oscuro para el texto */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -361,17 +372,113 @@ body {
 /* Responsividad para móviles */
 @media (max-width: 768px) {
     .carousel-container {
-        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
-        height: auto; /* Altura automática para el móvil */
+        flex-direction: column;
+        /* Cambiar a una columna en pantallas pequeñas */
+        height: auto;
+        /* Altura automática para el móvil */
     }
 
-    .carousel, .text-content {
-        width: 100%; /* Hacer los bloques del 100% del ancho en móviles */
-        height: 50%; /* Asegurar que cada sección ocupe la mitad */
+    .carousel,
+    .text-content {
+        width: 100%;
+        /* Hacer los bloques del 100% del ancho en móviles */
+        height: 50%;
+        /* Asegurar que cada sección ocupe la mitad */
     }
 
     .carousel-slide img {
         height: auto;
         max-width: 100%;
+    }
+}
+
+/* Sección Productos Deportivos */
+.sports-products {
+    background-color: #222831;
+    color: #ffffff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f0f0f0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    background-color: #393e46;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.product-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.categories .category {
+    background-color: #00adb5;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #cccccc;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #00adb5;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #00adb5;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #007f85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
     }
 }

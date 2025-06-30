@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDRAM Sport</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <!-- Aquí para enlazar el CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <!-- Barra de navegación -->
@@ -34,29 +37,30 @@
         </div>
     </nav>
 
-<!--------------------- Carrusel con texto en la mitad ----------------------->
-<!-- Carrusel con texto en la mitad -->
-<div class="carousel-container">
-    <!-- Carrusel (mitad izquierda) -->
-    <div class="carousel">
-        <div class="carousel-slide">
-            <img src="Pictures/Carrusel_Ejemplo1.png" alt="Correr">
+    <!--------------------- Carrusel con texto en la mitad ----------------------->
+    <!-- Carrusel con texto en la mitad -->
+    <div class="carousel-container">
+        <!-- Carrusel (mitad izquierda) -->
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="Pictures/Carrusel_Ejemplo1.png" alt="Correr">
+            </div>
+            <div class="carousel-slide">
+                <img src="Pictures/Carrusel_Ejemplo3.jpg" alt="Entrenamiento">
+            </div>
+            <div class="carousel-slide">
+                <img src="Pictures/Carrusel_Ejemplo2.png" alt="Urban">
+            </div>
         </div>
-        <div class="carousel-slide">
-            <img src="Pictures/Carrusel_Ejemplo3.jpg" alt="Entrenamiento">
-        </div>
-        <div class="carousel-slide">
-            <img src="Pictures/Carrusel_Ejemplo2.png" alt="Urban">
+
+        <!-- Texto (mitad derecha) -->
+        <div class="text-content">
+            <h2>Bienvenido a JDRAM Sport</h2>
+            <p>La mejor tienda deportiva en línea con productos exclusivos para ti. Encuentra lo último en ropa
+                deportiva, calzado y accesorios.</p>
+            <a href="#">Explorar más</a>
         </div>
     </div>
-    
-    <!-- Texto (mitad derecha) -->
-    <div class="text-content">
-        <h2>Bienvenido a JDRAM Sport</h2>
-        <p>La mejor tienda deportiva en línea con productos exclusivos para ti. Encuentra lo último en ropa deportiva, calzado y accesorios.</p>
-        <a href="#">Explorar más</a>
-    </div>
-</div>
 
 
 
@@ -87,120 +91,206 @@
         </div>
     </div>
 
-    <!-- Botones de navegación del carrusel -->
-   
+    <!-- Sección Productos Deportivos -->
+    <section class="sports-products py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Productos Deportivos Destacados</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-item">
+                    <img src="Pictures/Deportes/Tenis.jpg" alt="Tenis deportivos" />
+                    <div class="categories">
+                        <span class="category">Tenis deportivos</span>
+                    </div>
+                    <h3 class="product-name">Tenis Running Pro</h3>
+                    <p class="product-description">Cómodos y ligeros para tus entrenamientos diarios.</p>
+                    <span class="price">$1,299.00</span>
+                    <button class="btn btn-primary mt-2">Comprar</button>
+                </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+                <!-- Producto 2 -->
+                <div class="product-item">
+                    <img src="Pictures/Deportes/Balones.jpg" alt="Balones deportivos" />
+                    <div class="categories">
+                        <span class="category">Balones</span>
+                    </div>
+                    <h3 class="product-name">Balón Oficial Fútbol</h3>
+                    <p class="product-description">Balón profesional para partidos y entrenamiento.</p>
+                    <span class="price">$499.00</span>
+                    <button class="btn btn-primary mt-2">Comprar</button>
+                </div>
 
-<!-- Botón para desplegar el formulario -->
-<div class="text-center my-4">
-<button class="btn btn-jdram" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm">
-  Contáctanos
-</button>
-</div>
+                <!-- Producto 3 -->
+                <div class="product-item">
+                    <img src="Pictures/Deportes/Ropa.jpg" alt="Ropa deportiva" />
+                    <div class="categories">
+                        <span class="category">Ropa deportiva</span>
+                    </div>
+                    <h3 class="product-name">Conjunto Deportivo Mujer</h3>
+                    <p class="product-description">Material transpirable y diseño moderno.</p>
+                    <span class="price">$899.00</span>
+                    <button class="btn btn-primary mt-2">Comprar</button>
+                </div>
 
-<!-- Formulario oculto al inicio -->
-<div class="collapse" id="contactForm">
-    <div class="card card-body">
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                <!-- Producto 4 -->
+                <div class="product-item">
+                    <img src="Pictures/Deportes/Accesorios.jpg" alt="Accesorios deportivos" />
+                    <div class="categories">
+                        <span class="category">Accesorios</span>
+                    </div>
+                    <h3 class="product-name">Set de Accesorios Fitness</h3>
+                    <p class="product-description">Incluye bandas, guantes y botella deportiva.</p>
+                    <span class="price">$599.00</span>
+                    <button class="btn btn-primary mt-2">Comprar</button>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product-item">
+                    <img src="Pictures/Deportes/BandasResistencia.jpg" alt="Bandas de resistencia" />
+                    <div class="categories">
+                        <span class="category">Bandas de resistencia</span>
+                    </div>
+                    <h3 class="product-name">Set Bandas Elásticas</h3>
+                    <p class="product-description">Perfectas para entrenamiento de fuerza y rehabilitación.</p>
+                    <span class="price">$350.00</span>
+                    <button class="btn btn-primary mt-2">Comprar</button>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-item">
+                    <img src="Pictures/Deportes/Mancuernas.jpg" alt="Mancuernas ajustables" />
+                    <div class="categories">
+                        <span class="category">Mancuernas</span>
+                    </div>
+                    <h3 class="product-name">Mancuernas Ajustables</h3>
+                    <p class="product-description">Ideal para ejercicios de fuerza en casa o gimnasio.</p>
+                    <span class="price">$1,200.00</span>
+                    <button class="btn btn-primary mt-2">Comprar</button>
+                </div>
+
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-success">Enviar</button>
-        </form>
+        </div>
+    </section>
+
+    <!-- Botón para desplegar el formulario -->
+    <div class="text-center my-4">
+        <button class="btn btn-jdram" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm">
+            Contáctanos
+        </button>
     </div>
-</div>
-<br>
 
-<!-- Footer -->
-<footer class="footer pt-5">
+    <!-- Formulario oculto al inicio -->
+    <div class="collapse" id="contactForm">
+        <div class="card card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4"
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="footer pt-5">
         <div class="container">
             <div class="row g-4">
                 <!-- Newsletter -->
-            <div class="col-lg-4 col-md-6">
-                <h3 class="footer-title">Noticias</h3>
-                <p class="mb-4">Suscríbete a nuestro boletín para recibir actualizaciones, novedades y ofertas exclusivas.</p>
-            </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Noticias</h3>
+                    <p class="mb-4">Suscríbete a nuestro boletín para recibir actualizaciones, novedades y ofertas
+                        exclusivas.</p>
+                </div>
 
-            <!-- Newsletter Derecha -->
-            <div class="col-lg-4 col-md-6 ms-auto text-end">
+                <!-- Newsletter Derecha -->
+                <div class="col-lg-4 col-md-6 ms-auto text-end">
                     <form class="mb-4">
                         <div class="input-group">
                             <input type="email" class="form-control newsletter-input" placeholder="Ingresa tu email">
                             <button class="btn btn-subscribe text-white" type="submit">Suscribete</button>
                         </div>
                     </form>
-                    <p class="small">Al suscribirse, acepta nuestra Política de privacidad y da su consentimiento para recibir actualizaciones.</p>
+                    <p class="small">Al suscribirse, acepta nuestra Política de privacidad y da su consentimiento para
+                        recibir actualizaciones.</p>
                 </div>
-        </div>
-        <div class="footer-separator"></div>
-<div class="container">
-    <div class="row g-4">
-        <!-- Company Info con enlaces debajo -->
-        <div class="col-lg-4 col-md-6">
-            <h3 class="footer-title">¡Siguenos en nuestras redes!</h3>
-            <div class="social-links mb-4">
-                <a href="#"><img src="Pictures/RedesSociales/icons8-facebook-50.png" alt="Facebook" width="32"></a>
-                <a href="#"><img src="Pictures/RedesSociales/icons8-x-50.png" alt="Twitter" width="32"></a>
-                <a href="#"><img src="Pictures/RedesSociales/icons8-instagram-50.png" alt="Instagram" width="32"></a>
-                <a href="#"><img src="Pictures/RedesSociales/icons8-linkedin-50.png" alt="LinkedIn" width="32"></a>
-                <a href="#"><img src="Pictures/RedesSociales/icons8-youtube-50.png" alt="YouTube" width="32"></a>
             </div>
-            <!-- Lista de enlaces debajo -->
-            <ul class="footer-links">
-
-
-            </ul>
-        </div>
-
-        <!-- Atención a cliente -->
-        <div class="col-lg-4 col-md-6">
-            <h3 class="footer-title">Atención a cliente</h3>
-            <ul class="footer-links">
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-
-        <!-- Support -->
-        <div class="col-lg-4 col-md-6">
-            <h3 class="footer-title">Soporte</h3>
-            <ul class="footer-links">
-                <li><a href="#">Centro de ayuda</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-                <li><a href="#">Terminos de servicios</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom mt-5">
+            <div class="footer-separator"></div>
             <div class="container">
-                <div class="row py-3">
-                    <div class="col-md-6 text-center text-md-start">
-                        <p class="mb-0">&copy; 2025 JDRAM SPORT. Todos los derechos reservados.</p>
+                <div class="row g-4">
+                    <!-- Company Info con enlaces debajo -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="footer-title">¡Siguenos en nuestras redes!</h3>
+                        <div class="social-links mb-4">
+                            <a href="#"><img src="Pictures/RedesSociales/icons8-facebook-50.png" alt="Facebook"
+                                    width="32"></a>
+                            <a href="#"><img src="Pictures/RedesSociales/icons8-x-50.png" alt="Twitter" width="32"></a>
+                            <a href="#"><img src="Pictures/RedesSociales/icons8-instagram-50.png" alt="Instagram"
+                                    width="32"></a>
+                            <a href="#"><img src="Pictures/RedesSociales/icons8-linkedin-50.png" alt="LinkedIn"
+                                    width="32"></a>
+                            <a href="#"><img src="Pictures/RedesSociales/icons8-youtube-50.png" alt="YouTube"
+                                    width="32"></a>
+                        </div>
+                        <!-- Lista de enlaces debajo -->
+                        <ul class="footer-links">
+
+
+                        </ul>
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a href="#">JDRAM SPORT</a></p>
+
+                    <!-- Atención a cliente -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="footer-title">Atención a cliente</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="footer-title">Soporte</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Centro de ayuda</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Terminos de servicios</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom mt-5">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col-md-6 text-center text-md-start">
+                            <p class="mb-0">&copy; 2025 JDRAM SPORT. Todos los derechos reservados.</p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by <a href="#">JDRAM
+                                    SPORT</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
