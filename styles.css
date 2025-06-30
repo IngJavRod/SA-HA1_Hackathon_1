@@ -5,13 +5,16 @@
     box-sizing: border-box;
 }
 
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Estilos generales */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #000;
-    /* fondo negro */
     color: #fff;
-    /* texto blanco */
     line-height: 1.6;
 }
 
@@ -22,18 +25,14 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #111;
-    /* negro oscuro para navbar */
     border-bottom: 2px solid #fff;
-    /* línea blanca */
 }
 
-/* Logo */
 .logo img {
     height: 50px;
     width: auto;
 }
 
-/* Enlaces de navegación */
 .nav-links {
     list-style: none;
     display: flex;
@@ -52,7 +51,6 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-/* Mi cuenta y carrito */
 .user-cart a {
     color: #fff;
     margin-left: 1.5rem;
@@ -71,7 +69,6 @@ body {
 
 /* Hero Section */
 .hero-section {
-    /* Imagen HD deportiva libre de derechos (puedes cambiar por tu propia imagen) */
     background: url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
     height: 70vh;
     min-height: 400px;
@@ -83,7 +80,6 @@ body {
     color: #fff;
 }
 
-/* Capa oscura para mejorar legibilidad */
 .hero-section::before {
     content: "";
     position: absolute;
@@ -92,13 +88,11 @@ body {
     z-index: 0;
 }
 
-/* Contenido encima de la capa oscura */
 .hero-section .container {
     position: relative;
     z-index: 1;
 }
 
-/* Título */
 .hero-title {
     font-size: 3.5rem;
     font-weight: 900;
@@ -108,7 +102,6 @@ body {
     animation: fadeInUp 1s forwards 0.3s;
 }
 
-/* Subtítulo */
 .hero-subtitle {
     font-size: 1.8rem;
     margin-bottom: 2rem;
@@ -118,7 +111,6 @@ body {
     animation: fadeInUp 1s forwards 0.6s;
 }
 
-/* Botón mejorado */
 .hero-btn {
     font-size: 1.3rem;
     padding: 0.85rem 3rem;
@@ -153,36 +145,28 @@ body {
     }
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .hero-title {
-        font-size: 2.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .hero-section {
-        height: 50vh;
-        padding: 0 1rem;
-    }
-
-    .hero-btn {
-        font-size: 1.1rem;
-        padding: 0.7rem 2.5rem;
-    }
+/* Secciones de categoría */
+.section-category {
+    padding: 3rem 1.5rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+    color: #fff;
 }
 
+.section-category h2 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
 
 /* Grid de productos */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto 4rem auto;
 }
 
 /* Cada producto */
@@ -201,7 +185,6 @@ body {
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
 
-/* Imagen del producto */
 .product-item img {
     width: 100%;
     height: 200px;
@@ -209,7 +192,6 @@ body {
     display: block;
 }
 
-/* Categorías */
 .categories {
     padding: 1rem;
 }
@@ -224,7 +206,37 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive para móviles */
+/* Botón Volver Arriba */
+#btnScrollTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+#btnScrollTop:hover,
+#btnScrollTop:focus {
+    background-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+    outline: none;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -255,6 +267,19 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .hero-btn {
+        font-size: 1.1rem;
+        padding: 0.7rem 2.5rem;
+    }
+
+    .section-category {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .section-category h2 {
+        font-size: 2rem;
     }
 }
