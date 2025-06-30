@@ -1,38 +1,41 @@
-🏃‍♂️ Hackatón - Landing Page Tienda Deportiva
-Este proyecto fue desarrollado como parte de un hackatón, con la misión de crear una landing page interactiva para una tienda deportiva. El objetivo fue diseñar una plataforma online atractiva, intuitiva y adaptable a cualquier dispositivo.
+# 🏃‍♂️ Hackatón - Landing Page Tienda Deportiva
 
-🎯 Misión
+Este proyecto fue desarrollado como parte de un **hackatón**, con la misión de crear una **landing page interactiva** para una tienda deportiva. El objetivo fue diseñar una plataforma online atractiva, intuitiva y adaptable a cualquier dispositivo.
+
+---
+
+## 🎯 Misión
+
 Crear una landing page que muestre los principales productos y servicios de una tienda deportiva, con un enfoque en diseño visual, experiencia de usuario y funcionalidades dinámicas.
 
-💡 Características principales:
-🎨 Diseño atractivo y moderno
+---
 
-📱 Diseño responsivo para distintos dispositivos
+## 💡 Características Principales
 
-🧭 Interfaz intuitiva
+- 🎨 **Diseño atractivo y moderno**
+- 📱 **Diseño responsivo** para distintos dispositivos
+- 🧭 **Interfaz intuitiva**
+- ⚡ **Animaciones suaves** y transiciones llamativas
+- 🛒 **Interacción con productos**: agregar al carrito, vistas dinámicas
 
-⚡ Animaciones suaves y transiciones llamativas
+---
 
-🛒 Interacción con productos: agregar al carrito, vistas dinámicas
+## 🛠️ Tecnologías Utilizadas
 
-🛠️ Tecnologías utilizadas
-HTML para la estructura del contenido
+- `HTML` – para la estructura del contenido  
+- `CSS` / `Bootstrap` – para el diseño visual y la responsividad  
+- `JavaScript` – para animaciones, interacciones y transiciones  
+- `Visual Studio Code` – como editor principal  
 
-CSS / Bootstrap para el diseño visual y la responsividad
+---
 
-JavaScript para animaciones, interacciones y transiciones
+## ✅ Criterios de Evaluación
 
-Visual Studio Code como editor principal
+- ✨ Creatividad e innovación  
+- ⚙️ Funcionalidad general del sitio  
+- 🎯 Diseño y experiencia de usuario  
+- 🧱 Estructura clara del código HTML  
+- 🎨 Calidad y organización del CSS  
+- 💻 Uso eficiente de JavaScript  
 
-✅ Criterios evaluados
-Creatividad e innovación
-
-Funcionalidad general del sitio
-
-Diseño y experiencia de usuario
-
-Estructura clara del código HTML
-
-Calidad y organización del CSS
-
-Uso eficiente de JavaScript
+---
