@@ -30,27 +30,10 @@
                   <li><a href="#">Accesorios</a></li>
               </ul>
           </li>
-          <li class="dropdown">
-              <a href="#">Mujer</a>
-              <ul class="dropdown-content">
-                  <li><a href="#">Playeras</a></li>
-                  <li><a href="#">Pantalones</a></li>
-                  <li><a href="#">Accesorios</a></li>
-              </ul>          
-          <li class="dropdown">
-              <a href="#">Niños</a>
-              <ul class="dropdown-content">
-                  <li><a href="#">Playeras</a></li>
-                  <li><a href="#">Pantalones</a></li>
-                  <li><a href="#">Accesorios</a></li>
-              </ul>
-          <li class="dropdown">
-              <a href="#">Hecho en México</a>
-              <ul class="dropdown-content">
-                  <li><a href="#">Playeras</a></li>
-                  <li><a href="#">Pantalones</a></li>
-                  <li><a href="#">Accesorios</a></li>
-              </ul>
+
+          <li><a href="#">Mujer</a></li>
+          <li><a href="#">Niños</a></li>
+          <li><a href="#">Hecho en MX</a></li>
           <li><a href="#">Oferta</a></li>
       </ul>
 
@@ -129,24 +112,35 @@
 </div>
 
 <!-- Formulario oculto al inicio -->
+
 <div class="collapse" id="contactForm">
-    <div class="card card-body">
-        <form>
+    <section class="contact-section text-center my-5">
+    <div class="container">
+        <h2 class="contact-title mb-3">¡Hablemos!</h2>
+        <p class="contact-subtitle mb-4">
+        Queremos ayudarte. Completa el formulario y te contactaremos lo antes posible.
+        </p>
+        <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form class="contact-card p-4">
             <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                <label for="contactName" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Tu nombre completo" required>
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="tucorreo@ejemplo.com">
+                <label for="contactEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="tucorreo@ejemplo.com" required>
             </div>
             <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <label for="contactMessage" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
             </div>
-            <button type="submit" class="btn btn-success">Enviar</button>
-        </form>
+            <button type="submit" class="btn btn-contact">Enviar mensaje</button>
+            </form>
+        </div>
+        </div>
     </div>
+    </section>
 </div>
 <br>
 
