@@ -135,14 +135,14 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* Navbar general */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #000; /* negro oscuro para navbar */
-    border-bottom: 2px solid #fff; /* línea blanca */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #000000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Logo */
@@ -153,21 +153,68 @@ body {
 
 /* Enlaces de navegación */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+.nav-links li {
+  position: relative;
 }
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+} 
 
 .nav-links li a:hover {
     color: #f0f0f0;
     border-bottom: 2px solid #fff;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  border-radius: 5px; /* Mantén esto si quieres esquinas redondeadas */
+  z-index: 1000;
+  overflow: hidden; /* Asegura que el fondo cubra bien */
+}
+
+.dropdown-content li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  color: #000000;
+  text-decoration: none;
+  background-color: white;     /* Fondo base */
+  box-sizing: border-box;      /* Evita que el padding se desborde */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #ffffff;
+  color: white;
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Mi cuenta y carrito */
@@ -375,3 +422,5 @@ body {
         max-width: 100%;
     }
 }
+
+/* Menu desplegable */
