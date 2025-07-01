@@ -5,51 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JDRAM Sport</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <!-- Aquí para enlazar el CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
     <nav class="navbar">
-        <!-- Logo de la página -->
         <div class="logo">
             <img src="Pictures/Logo.png" alt="Logo">
         </div>
 
-      <!-- Enlaces de la barra de nav -->
       <ul class="nav-links">
-          <li><a href="#">Nuevo</a></li>
+            <li><a href="#">Nuevo</a></li>
 
-          <!-- Menú desplegable en hover -->
-          <li class="dropdown">
-              <a href="#">Hombre</a>
-              <ul class="dropdown-content">
-                  <li><a href="#">Playeras</a></li>
-                  <li><a href="#">Pantalones</a></li>
-                  <li><a href="#">Accesorios</a></li>
-              </ul>
-          </li>
+            <li class="dropdown">
+                <a href="#">Hombre</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Playeras</a></li>
+                    <li><a href="#">Pantalones</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                </ul>
+            </li>
 
-          <li><a href="#">Mujer</a></li>
-          <li><a href="#">Niños</a></li>
-          <li><a href="#">Hecho en MX</a></li>
-          <li><a href="#">Oferta</a></li>
+            <li><a href="#">Mujer</a></li>
+            <li><a href="#">Niños</a></li>
+            <li><a href="#">Hecho en MX</a></li>
+            <li><a href="#">Oferta</a></li>
       </ul>
 
-        <!-- Mi cuenta y Carrito -->
         <div class="user-cart">
             <a href="#" class="user-link">Mi cuenta</a>
-            <a href="#" class="cart-link">Carrito</a>
+            <div class="cart-dropdown-container">
+                <a href="#" class="cart-link">Carrito</a>
+                <div class="cart-menu">
+                    <p>No hay productos en el carrito.</p>
+                </div>
+            </div>
         </div>
     </nav>
 
-
-    
-<!--------------------- Carrusel con texto en la mitad ----------------------->
-<!-- Carrusel con texto en la mitad -->
 <div class="carousel-container">
-    <!-- Carrusel (mitad izquierda) -->
     <div class="carousel">
         <div class="carousel-slide">
             <img src="Pictures/Carrusel_Ejemplo1.png" alt="Ejemplo1">
@@ -60,7 +54,7 @@
         <div class="carousel-slide">
             <img src="Pictures/Carrusel_Ejemplo3.png" alt="Ejemplo3">
         </div>
-         <div class="carousel-slide">
+           <div class="carousel-slide">
             <img src="Pictures/Carrusel_Ejemplo4.jpg" alt="Ejemplo4">
         </div>
         <div class="carousel-slide">
@@ -70,8 +64,7 @@
             <img src="Pictures/Carrusel_Ejemplo6.jpg" alt="Ejemplo6">
         </div>
     </div>
-    
-    <!-- Texto (mitad derecha) -->
+
     <div class="text-content">
         <h2>Bienvenido a JDRAM Sport</h2>
         <p>La mejor tienda deportiva en línea con productos exclusivos para ti. Encuentra lo último en ropa deportiva, calzado y accesorios.</p>
@@ -79,11 +72,7 @@
     </div>
 </div>
 
-
-
-    <!-- Regillas (productos) -->
     <div class="products-grid">
-        <!-- Producto 1 -->
         <div class="product-item">
             <img src="Pictures/Correr.jpg" alt="Correr">
             <div class="categories">
@@ -91,7 +80,6 @@
             </div>
         </div>
 
-        <!-- Producto 2 -->
         <div class="product-item">
             <img src="Pictures/Entrenar.png" alt="Entrenamiento">
             <div class="categories">
@@ -99,7 +87,6 @@
             </div>
         </div>
 
-        <!-- Producto 3 -->
         <div class="product-item">
             <img src="Pictures/Urban.jpg" alt="Urban">
             <div class="categories">
@@ -108,19 +95,14 @@
         </div>
     </div>
 
-    <!-- Botones de navegación del carrusel -->
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
 
-<!-- Botón para desplegar el formulario -->
 <div class="text-center my-4">
 <button class="btn btn-jdram" type="button" data-bs-toggle="collapse" data-bs-target="#contactForm">
-  Contáctanos
+    Contáctanos
 </button>
 </div>
-
-<!-- Formulario oculto al inicio -->
 
 <div class="collapse" id="contactForm">
     <section class="contact-section text-center my-5">
@@ -152,13 +134,10 @@
     </section>
 </div>
 <br>
-<!------ Contenedor "Lo mas comprado" ------>
-<!-- Contenedor "Lo más comprado" -->
 <section class="best-sellers">
     <div class="container text-center my-5">
         <h2 class="section-title mb-4">Lo más comprado</h2>
         <div class="products-grid">
-            <!-- Producto 1 -->
             <div class="product-item">
                 <img src="Pictures/RopaHombre/Playera_Manga_Larga.avif" alt="Playera">
                 <div class="categories">
@@ -167,7 +146,6 @@
                 <button class="btn btn-add-to-cart" onclick="addToCart('Camisa de manga larga')">Agregar al carrito</button>
                 <button class="btn btn-buy-now" onclick="buyNow('Camisa de manga larga')">Comprar</button>
             </div>
-            <!-- Producto 2 -->
             <div class="product-item">
                 <img src="Pictures/RopaMujer/Leggins_Azul.webp" alt="Ropa de Mujer">
                 <div class="categories">
@@ -176,41 +154,34 @@
                 <button class="btn btn-add-to-cart" onclick="addToCart('Leggins deportivos')">Agregar al carrito</button>
                 <button class="btn btn-buy-now" onclick="buyNow('Leggins deportivos')">Comprar</button>
             </div>
-            <!-- Producto 3 -->
             <div class="product-item">
                 <img src="Pictures/BalonFut/Balon_ Adidas.webp" alt="Balon">
                 <div class="categories">
                     <span class="category">Balon Adidas</span>
                 </div>
-                <button class="btn btn-add-to-cart" onclick="addToCart('Balon')">Agregar al carrito</button>
-                <button class="btn btn-buy-now" onclick="buyNow('Balon')">Comprar</button>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Balon Adidas')">Agregar al carrito</button>
+                <button class="btn btn-buy-now" onclick="buyNow('Balon Adidas')">Comprar</button>
             </div>
-            <!-- Producto 4 -->
             <div class="product-item">
                 <img src="Pictures/RopaHombre/Tenis_para_correr.png" alt="Tenis para correr">
                 <div class="categories">
                     <span class="category">Tenis Nike Zoom</span>
                 </div>
-                <button class="btn btn-add-to-cart" onclick="addToCart('Tenis para correr')">Agregar al carrito</button>
-                <button class="btn btn-buy-now" onclick="buyNow('Tenis para correr')">Comprar</button>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Tenis Nike Zoom')">Agregar al carrito</button>
+                <button class="btn btn-buy-now" onclick="buyNow('Tenis Nike Zoom')">Comprar</button>
             </div>
         </div>
     </div>
 </section>
 
-
-
-<!------ Footer ------>
 <footer class="footer pt-5">
         <div class="container">
             <div class="row g-4">
-                <!-- Newsletter -->
-            <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">
                 <h3 class="footer-title">Noticias</h3>
                 <p class="mb-4">Suscríbete a nuestro boletín para recibir actualizaciones, novedades y ofertas exclusivas.</p>
             </div>
 
-            <!-- Newsletter Derecha -->
             <div class="col-lg-4 col-md-6 ms-auto text-end">
                     <form class="mb-4">
                         <div class="input-group">
@@ -224,7 +195,6 @@
         <div class="footer-separator"></div>
 <div class="container">
     <div class="row g-4">
-        <!-- Company Info con enlaces debajo -->
         <div class="col-lg-4 col-md-6">
             <h3 class="footer-title">¡Siguenos en nuestras redes!</h3>
             <div class="social-links mb-4">
@@ -234,14 +204,12 @@
                 <a href="#"><img src="Pictures/RedesSociales/icons8-linkedin-50.png" alt="LinkedIn" width="32"></a>
                 <a href="#"><img src="Pictures/RedesSociales/icons8-youtube-50.png" alt="YouTube" width="32"></a>
             </div>
-            <!-- Lista de enlaces debajo -->
             <ul class="footer-links">
 
 
             </ul>
         </div>
 
-        <!-- Atención a cliente -->
         <div class="col-lg-4 col-md-6">
             <h3 class="footer-title">Atención a cliente</h3>
             <ul class="footer-links">
@@ -251,7 +219,6 @@
             </ul>
         </div>
 
-        <!-- Support -->
         <div class="col-lg-4 col-md-6">
             <h3 class="footer-title">Soporte</h3>
             <ul class="footer-links">
@@ -263,7 +230,6 @@
     </div>
 </div>
 
-        <!-- Footer Bottom -->
         <div class="footer-bottom mt-5">
             <div class="container">
                 <div class="row py-3">
@@ -279,5 +245,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-</body>
+    <script src="script.js"></script> </body>
 </html>
