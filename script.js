@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Cierra el menú al hacer click fuera en móvil
+    // Cierra el menu al hacer click fuera en móvil
     document.addEventListener('click', function(e) {
         if (window.innerWidth <= 600) {
             let clickedToggle = false;
