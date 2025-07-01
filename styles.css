@@ -1,125 +1,126 @@
 /* ------------------ Footer ----------------*/
 .footer {
-            background: linear-gradient(145deg, #1a1c23, #242730);
-            color: #ffffff;
-        }
-        
-        .footer-title {
-            color: #fff;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            position: relative;
-        }
-        
-        .footer-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -8px;
-            width: 30px;
-            height: 2px;
-            background: #18415a;
-        }
-        
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .footer-links li {
-            margin-bottom: 1rem;
-        }
-        
-        .footer-links a {
-            color: #b4b6bb;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: #ffffff;
-            padding-left: 5px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.1);
-            color: #ffffff;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            background: #18415a;
-            transform: translateY(-3px);
-        }
-        
-        .newsletter-input {
-            background: rgba(255, 255, 255, 0.705);
-            border: 1px solid rgba(255,255,255,0.1);
-            color: #ffffff;
-        }
-        
-        .newsletter-input:focus {
-            background: #18415a;
-            border-color:#ffffff;
-            color: #ffffff;
-            box-shadow: none;
-        }
-        
-        .btn-subscribe {
-            background: #000000;
-            border: none;
-            padding: 0.5rem 1.5rem;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-subscribe:hover {
-            background: #18415a;
-            transform: translateY(-2px);
-        }
-        
-        .footer-bottom {
-            background: rgba(0,0,0,0.2);
-        }
-        
-        .footer-bottom a {
-            color: #18415a;
-            text-decoration: none;
-        }
-        
-        .footer-bottom a:hover {
-            color: #ffffff;
-        }
-
-        .footer-separator {
-        height: 2px;
-        background: linear-gradient(to right, #18415a, #6c6ce7);
-        margin: 40px 0;
-        border-radius: 1px;
+    background: linear-gradient(145deg, #1a1c23, #242730);
+    color: #ffffff;
 }
 
-        body {
-    background-color: #f8f9fa;
+.footer-title {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 30px;
+    height: 2px;
+    background: #18415a;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #b4b6bb;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
     color: #ffffff;
+    padding-left: 5px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #18415a;
+    transform: translateY(-3px);
+}
+
+.newsletter-input {
+    background: rgba(255, 255, 255, 0.705);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #ffffff; /* Asegura que el texto del input sea legible */
+}
+
+.newsletter-input:focus {
+    background: #18415a;
+    border-color:#ffffff;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-subscribe {
+    background: #000000;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background: #18415a;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    background: rgba(0,0,0,0.2);
+}
+
+.footer-bottom a {
+    color: #18415a;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ffffff;
+}
+
+.footer-separator {
+    height: 2px;
+    background: linear-gradient(to right, #18415a, #6c6ce7);
+    margin: 40px 0;
+    border-radius: 1px;
+}
+
+body {
+    background-color: #f8f9fa; /* Esto parece ser un estilo global, asegúrate si quieres este color o #18415a */
+    color: #ffffff; /* Esto también es global, puede que lo quieras más específico */
 }
 
 /* Contactanos */
 .btn-jdram {
-        background-color: #000000;
-        color: white;
-        border: none;
+    background-color: #000000;
+    color: white;
+    border: none;
 }
 
 .btn-jdram:hover {
-        background-color: #18415a;
-        transform: translateY(-2px);
+    background-color: #18415a;
+    transform: translateY(-2px);
 }
+
 /* Reset básico */
 * {
     margin: 0;
@@ -147,17 +148,21 @@ body {
 
 /* Logo */
 .logo img {
-    max-height: 120px; 
+    max-height: 120px;
     width: auto;
 }
 
 /* Enlaces de navegación */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0; /* Asegura que no haya margen extra */
+    padding: 0; /* Asegura que no haya padding extra */
+}
+
+.nav-links li {
+    position: relative;
 }
 
 .nav-links li {
@@ -176,48 +181,13 @@ body {
     border-bottom: 2px solid #fff;
 }
 
-/* Dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
-  border-radius: 5px; /* Mantén esto si quieres esquinas redondeadas */
-  z-index: 1000;
-  overflow: hidden; /* Asegura que el fondo cubra bien */
+/* Mi cuenta y Carrito */
+.user-cart {
+    display: flex; /* Para alinear Mi cuenta y Carrito */
+    align-items: center;
+    position: relative; /* Necesario para el posicionamiento del menú del carrito */
 }
 
-.dropdown-content li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown-content a {
-  display: block;
-  width: 100%;
-  padding: 12px 16px;
-  color: #000000;
-  text-decoration: none;
-  background-color: white;     /* Fondo base */
-  box-sizing: border-box;      /* Evita que el padding se desborde */
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.dropdown-content a:hover {
-  background-color: #ffffff;
-  color: white;
-}
-
-/* Mostrar menú al pasar el mouse */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Mi cuenta y carrito */
 .user-cart a {
     color: #fff;
     margin-left: 1.5rem;
@@ -234,10 +204,72 @@ body {
     color: #000;
 }
 
+/* -------------------- Cart Dropdown Styles -------------------- */
+.cart-dropdown-container {
+    position: relative; /* Para posicionar el menú del carrito */
+    margin-left: 1.5rem; /* Ajusta el espacio del carrito */
+}
+
+.cart-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%; /* Debajo del botón "Carrito" */
+    right: 0; /* Alineado a la derecha del botón "Carrito" */
+    background-color: #1a1c23;
+    min-width: 250px; /* Ancho mínimo del menú */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 10px;
+    color: #ffffff; /* Texto blanco para los items */
+    max-height: 300px; /* Limita la altura del carrito para scroll si hay muchos items */
+    overflow-y: auto; /* Agrega scroll si excede la altura */
+}
+
+.cart-menu.show {
+    display: block; /* Muestra el menú cuando tiene la clase 'show' */
+}
+
+.cart-menu .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.cart-menu .cart-item:last-child {
+    border-bottom: none; /* No hay borde en el último item */
+}
+
+.cart-menu .cart-item p {
+    margin: 0;
+    font-size: 0.9em;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio */
+}
+
+.cart-menu .cart-item button {
+    background-color: #dc3545; /* Color rojo para eliminar */
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-menu .cart-item button:hover {
+    background-color: #c82333;
+}
+/* ----------------------------------------------------------- */
+
 /* Grid de productos */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Ajustado minmax para que se adapte mejor a diferentes tamaños sin ser demasiado pequeño en desktop */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
@@ -283,25 +315,142 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive para móviles */
-@media (max-width: 600px) {
+/* Responsive para móviles (Ajustes adicionales y más específicos) */
+@media (max-width: 768px) { /* Tabletas y móviles más grandes */
     .navbar {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
+        padding: 1rem; /* Ajusta padding para pantallas más pequeñas */
     }
 
     .nav-links {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /* Permite que los enlaces salten de línea */
         gap: 1rem;
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        justify-content: center; /* Centra los enlaces si se envuelven */
     }
 
     .user-cart {
         margin-top: 0.5rem;
+        width: 100%;
+        text-align: center; /* Centra los elementos de carrito */
+        flex-direction: column; /* Apila Mi cuenta y Carrito */
+        align-items: center;
+    }
+    .user-cart a {
+        margin-left: 0; /* Elimina el margen izquierdo en móvil */
+        display: block; /* Hace que los botones Mi cuenta/Carrito ocupen todo el ancho */
+        margin-bottom: 0.5rem;
+    }
+
+    /* Cart dropdown in mobile */
+    .cart-dropdown-container {
+        margin-left: 0; /* Reset margin */
+        width: 100%;
+    }
+    .cart-menu {
+        position: static; /* No absolute position in mobile */
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        min-width: unset; /* Remove min-width constraint */
+    }
+
+
+    .products-grid {
+        /* Para tabletas y móviles más grandes: 2 columnas */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 1rem; /* Reduce el padding en el grid */
+        gap: 1.5rem;
+    }
+
+    .product-item img {
+        height: 180px; /* Ajusta la altura de las imágenes de productos */
+    }
+
+    /* Contactanos Section */
+    .contact-section {
+        padding: 40px 15px; /* Reduce padding para móvil */
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 1rem; /* Ajusta el padding general del footer */
+    }
+}
+
+
+@media (max-width: 600px) { /* Móviles más pequeños (ej. iPhone SE, Pixel 2) */
+    .logo img {
+        max-height: 80px; /* Hace el logo más pequeño en móviles */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Apila los enlaces de navegación verticalmente */
+        align-items: center; /* Centra los enlaces apilados */
+        gap: 0.8rem;
+    }
+
+    .nav-links li a {
+        padding: 0.5rem 0; /* Añade un poco de padding vertical */
+    }
+
+    .products-grid {
+        /* Para móviles más pequeños: 1 columna */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 1 columna en móviles pequeños */
+        padding: 1rem;
+        gap: 1rem;
     }
 
     .product-item img {
         height: 150px;
+    }
+
+    /* Carousel */
+    .carousel-container {
+        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
+        height: auto; /* Altura automática para el móvil */
+    }
+
+    .carousel, .text-content {
+        width: 100%; /* Hacer los bloques del 100% del ancho en móviles */
+        height: 250px; /* O un valor fijo para el carrusel en móvil */
+        /* Ajusta esta altura según lo que funcione mejor para tus imágenes */
+    }
+
+    .text-content {
+        padding: 15px; /* Reduce padding del contenido de texto */
+        height: auto; /* Altura automática para que el contenido se ajuste */
+    }
+
+    .text-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    /* Best Sellers Grid (Lo más comprado) */
+    .best-sellers .products-grid {
+        /* En móviles, cambia a 1 columna */
+        grid-template-columns: 1fr;
+        gap: 1rem; /* Reduce el espacio entre productos */
+    }
+
+    .best-sellers .product-item img {
+        height: 200px; /* Ajusta la altura de las imágenes de los productos más vendidos en móvil */
     }
 }
 
@@ -372,7 +521,6 @@ body {
 
 
 /* ------------- Carrusel --------------- */
-
 
 /* Carrusel de dos mitades */
 .carousel-container {
@@ -446,106 +594,92 @@ body {
     background-color: #111;
 }
 
-/* Responsividad para móviles */
-@media (max-width: 768px) {
-    .carousel-container {
-        flex-direction: column; /* Cambiar a una columna en pantallas pequeñas */
-        height: auto; /* Altura automática para el móvil */
-    }
-
-    .carousel, .text-content {
-        width: 100%; /* Hacer los bloques del 100% del ancho en móviles */
-        height: 50%; /* Asegurar que cada sección ocupe la mitad */
-    }
-
-    .carousel-slide img {
-        height: auto;
-        max-width: 100%;
-    }
-}
-
 /* --------------------- Menu Desplegable ------------------------*/
 /* Enlaces de navegación */
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
+/* Nota: Ya tienes .nav-links arriba, revisa si hay duplicación. He movido los estilos específicos del dropdown aquí */
 
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* Hover en los enlaces de navegación */
-.nav-links li a:hover {
-    color: #f0f0f0;
-    border-bottom: 2px solid #3a3e4e;
-}
-
-/* Dropdown (Espacio vertical)*/   
+/* Dropdown (Espacio vertical)*/
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #1a1c23;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
-  border-radius: 5px; /* Mantén esto si quieres esquinas redondeadas */
-  z-index: 1000;
-  overflow: hidden; /* Asegura que el fondo cubra bien */
-  
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1c23;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    z-index: 1000;
+    overflow: hidden;
 }
 
 .dropdown-content li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo de los enlaces dentro del dropdown (Espacio Horizontal) */   
+/* Estilo de los enlaces dentro del dropdown (Espacio Horizontal) */
 .dropdown-content a {
-  display: block;
-  width: 100%;
-  padding: 12px 16px;
-  color: #333;
-  text-decoration: none;
-  background-color: #1a1c23;     /* Fondo base */
-  box-sizing: border-box;      /* Evita que el padding se desborde */
-  transition: background-color 0.2s ease, color 0.2s ease;
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    color: #ffffff; /* Asegura que el texto sea blanco en el dropdown */
+    text-decoration: none;
+    background-color: #1a1c23;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Hover dentro del dropdown */
 .dropdown-content a:hover {
-  background-color: #333;
-  color: #ffffff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: #333; /* Fondo más oscuro al pasar el ratón */
+    color: #ffffff; /* Texto blanco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Mostrar menú al pasar el mouse */
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
 /* Añadir efecto de sombreado en el enlace desplegado al pasar el cursor */
 .dropdown-content a:focus, .dropdown-content a:hover {
-  background-color: #3a3e4e; /* Fondo suave al pasar por encima */
-  color: #000; /* Cambiar texto a negro */
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+    background-color: #3a3e4e;
+    color: #ffffff; /* Asegura que el texto permanezca blanco */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para el menú desplegable en móviles */
+@media (max-width: 768px) {
+    .nav-links li.dropdown {
+        width: 100%; /* El elemento del dropdown ocupa todo el ancho */
+        text-align: center; /* Centra el texto del elemento padre */
+    }
+
+    .dropdown-content {
+        position: static; /* Cambia a posición estática para que fluya en el documento */
+        display: block; /* Muestra el contenido del dropdown siempre en móviles (o gestiona con JS para un toggle) */
+        width: 100%;
+        box-shadow: none; /* Elimina la sombra en móviles */
+        border-radius: 0; /* Elimina bordes redondeados */
+        background-color: #111; /* Un fondo ligeramente diferente para los sub-enlaces */
+    }
+
+    .dropdown-content a {
+        padding: 8px 10px; /* Reduce el padding de los enlaces internos */
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+        color: #ddd; /* Color ligeramente más claro para los sub-enlaces */
+        background-color: #111; /* Asegura el fondo */
+    }
+
+    .dropdown-content a:hover {
+        background-color: #000; /* Color de fondo al pasar el ratón */
+        color: #fff;
+    }
 }
 
 
-
-/* ----------- Estilos para el contenedor "Lo más comprado" ------------------------ */
+/* ----------- Estilos para el contenedor "Lo mas comprado" ------------------------ */
 .best-sellers {
     background-color: #18415a;
     color: #ffffff;
@@ -557,12 +691,17 @@ body {
     font-size: 2rem;
     font-weight: 600;
     color: #ffffff;
+    text-align: center; /* Centra el título de la sección */
+    margin-bottom: 30px;
 }
 
 .best-sellers .products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* Ajustado para desktop: 4 columnas, minmax para flexibilidad */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .best-sellers .product-item {
@@ -588,6 +727,8 @@ body {
 .best-sellers .btn {
     width: 100%;
     margin-top: 10px;
+    display: block; /* Asegura que los botones sean de bloque para ocupar todo el ancho */
+    text-align: center;
 }
 
 .best-sellers .btn-add-to-cart {
@@ -597,6 +738,7 @@ body {
     border: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem; /* Espacio entre botones */
 }
 
 .best-sellers .btn-add-to-cart:hover {
@@ -616,4 +758,32 @@ body {
     background-color: #d28c3d;
 }
 
+/* Media query específica para los productos más vendidos en móvil */
+@media (max-width: 992px) { /* Para pantallas de tabletas más grandes */
+    .best-sellers .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 3 o 2 columnas */
+    }
+}
 
+@media (max-width: 768px) { /* Para tabletas y móviles grandes */
+    .best-sellers .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 2 columnas */
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 576px) { /* Para móviles pequeños (landscape y portrait) */
+    .best-sellers .products-grid {
+        grid-template-columns: 1fr; /* Una sola columna en móviles pequeños */
+        padding: 0 1rem; /* Reduce el padding horizontal */
+    }
+    .best-sellers .product-item {
+        margin-bottom: 1rem; /* Espacio entre productos apilados */
+    }
+    .best-sellers .product-item img {
+        height: 180px; /* Ajusta la altura de la imagen en móvil */
+    }
+    .best-sellers .section-title {
+        font-size: 1.7rem;
+    }
+}
