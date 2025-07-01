@@ -56,19 +56,30 @@
       </div>
   </nav>
 
+
+    
 <!--------------------- Carrusel con texto en la mitad ----------------------->
 <!-- Carrusel con texto en la mitad -->
 <div class="carousel-container">
     <!-- Carrusel (mitad izquierda) -->
     <div class="carousel">
         <div class="carousel-slide">
-            <img src="Pictures/Carrusel_Ejemplo1.png" alt="Correr">
+            <img src="Pictures/Carrusel_Ejemplo1.png" alt="Ejemplo1">
         </div>
         <div class="carousel-slide">
-            <img src="Pictures/Carrusel_Ejemplo3.jpg" alt="Entrenamiento">
+            <img src="Pictures/Carrusel_Ejemplo2.jpg" alt="Ejemplo2">
         </div>
         <div class="carousel-slide">
-            <img src="Pictures/Carrusel_Ejemplo2.png" alt="Urban">
+            <img src="Pictures/Carrusel_Ejemplo3.png" alt="Ejemplo3">
+        </div>
+         <div class="carousel-slide">
+            <img src="Pictures/Carrusel_Ejemplo4.jpg" alt="Ejemplo4">
+        </div>
+        <div class="carousel-slide">
+            <img src="Pictures/Carrusel_Ejemplo5.png" alt="Ejemplo5">
+        </div>
+        <div class="carousel-slide">
+            <img src="Pictures/Carrusel_Ejemplo6.jpg" alt="Ejemplo6">
         </div>
     </div>
     
@@ -110,8 +121,6 @@
     </div>
 
     <!-- Botones de navegación del carrusel -->
-   
-
     <script src="script.js"></script>
 </body>
 </html>
@@ -155,8 +164,55 @@
     </section>
 </div>
 <br>
+<!------ Contenedor "Lo mas comprado" ------>
+<!-- Contenedor "Lo más comprado" -->
+<section class="best-sellers">
+    <div class="container text-center my-5">
+        <h2 class="section-title mb-4">Lo más comprado</h2>
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <div class="product-item">
+                <img src="Pictures/RopaHombre/Playera_Manga_Larga.avif" alt="Playera">
+                <div class="categories">
+                    <span class="category">Camisa de manga larga </span>
+                </div>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Camisa de manga larga')">Agregar al carrito</button>
+                <button class="btn btn-buy-now" onclick="buyNow('Camisa de manga larga')">Comprar</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product-item">
+                <img src="Pictures/RopaMujer/Leggins_Azul.webp" alt="Ropa de Mujer">
+                <div class="categories">
+                    <span class="category">Leggins deportivos</span>
+                </div>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Leggins deportivos')">Agregar al carrito</button>
+                <button class="btn btn-buy-now" onclick="buyNow('Leggins deportivos')">Comprar</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product-item">
+                <img src="Pictures/BalonFut/Balon_ Adidas.webp" alt="Balon">
+                <div class="categories">
+                    <span class="category">Balon Adidas</span>
+                </div>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Balon')">Agregar al carrito</button>
+                <button class="btn btn-buy-now" onclick="buyNow('Balon')">Comprar</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product-item">
+                <img src="Pictures/RopaHombre/Tenis_para_correr.png" alt="Tenis para correr">
+                <div class="categories">
+                    <span class="category">Tenis Nike Zoom</span>
+                </div>
+                <button class="btn btn-add-to-cart" onclick="addToCart('Tenis para correr')">Agregar al carrito</button>
+                <button class="btn btn-buy-now" onclick="buyNow('Tenis para correr')">Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- Footer -->
+
+
+<!------ Footer ------>
 <footer class="footer pt-5">
         <div class="container">
             <div class="row g-4">

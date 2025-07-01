@@ -135,7 +135,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar general */
+/* ------------------ Navbar ------------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -527,7 +527,7 @@ body {
 /* Hover dentro del dropdown */
 .dropdown-content a:hover {
   background-color: #333;
-  color: white;
+  color: #ffffff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
@@ -542,3 +542,78 @@ body {
   color: #000; /* Cambiar texto a negro */
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
 }
+
+
+
+/* ----------- Estilos para el contenedor "Lo más comprado" ------------------------ */
+.best-sellers {
+    background-color: #18415a;
+    color: #ffffff;
+    padding: 60px 20px;
+    border-bottom: 1px solid #fff; /* línea blanca */
+}
+
+.best-sellers .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.best-sellers .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.best-sellers .product-item {
+    background-color: #2b2d36;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.best-sellers .product-item:hover {
+    transform: translateY(-5px);
+}
+
+.best-sellers .product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.best-sellers .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.best-sellers .btn-add-to-cart {
+    background-color: #18415a;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.best-sellers .btn-add-to-cart:hover {
+    background-color: #122c40;
+}
+
+.best-sellers .btn-buy-now {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.best-sellers .btn-buy-now:hover {
+    background-color: #d28c3d;
+}
+
+
