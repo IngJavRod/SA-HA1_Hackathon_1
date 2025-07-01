@@ -1,3 +1,125 @@
+/* ------------------ Footer ----------------*/
+.footer {
+            background: linear-gradient(145deg, #1a1c23, #242730);
+            color: #ffffff;
+        }
+        
+        .footer-title {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 30px;
+            height: 2px;
+            background: #18415a;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links a {
+            color: #b4b6bb;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #ffffff;
+            padding-left: 5px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            color: #ffffff;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #18415a;
+            transform: translateY(-3px);
+        }
+        
+        .newsletter-input {
+            background: rgba(255, 255, 255, 0.705);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #ffffff;
+        }
+        
+        .newsletter-input:focus {
+            background: #18415a;
+            border-color:#ffffff;
+            color: #ffffff;
+            box-shadow: none;
+        }
+        
+        .btn-subscribe {
+            background: #000000;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-subscribe:hover {
+            background: #18415a;
+            transform: translateY(-2px);
+        }
+        
+        .footer-bottom {
+            background: rgba(0,0,0,0.2);
+        }
+        
+        .footer-bottom a {
+            color: #18415a;
+            text-decoration: none;
+        }
+        
+        .footer-bottom a:hover {
+            color: #ffffff;
+        }
+
+        .footer-separator {
+        height: 2px;
+        background: linear-gradient(to right, #18415a, #6c6ce7);
+        margin: 40px 0;
+        border-radius: 1px;
+}
+
+        body {
+    background-color: #f8f9fa;
+    color: #ffffff;
+}
+
+/* Contactanos */
+.btn-jdram {
+        background-color: #000000;
+        color: white;
+        border: none;
+}
+
+.btn-jdram:hover {
+        background-color: #18415a;
+        transform: translateY(-2px);
+}
 /* Reset básico */
 * {
     margin: 0;
@@ -13,14 +135,14 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* ------------------ Navbar ------------------*/
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #000; /* negro oscuro para navbar */
-    border-bottom: 2px solid #fff; /* línea blanca */
+    border-bottom: 1px solid #fff; /* línea blanca */
 }
 
 /* Logo */
@@ -77,7 +199,7 @@ body {
 
 /* Cada producto */
 .product-item {
-    background-color: #111;
+    background-color: #1a1c23;
     border: 1.5px solid #fff;
     border-radius: 8px;
     overflow: hidden;
@@ -138,39 +260,80 @@ body {
 
 
 /* Contactanos */
-.contact-form {
-    background-color: #593b6d;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+.contact-section {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 60px 20px;
+    border-radius: 12px;
     margin-top: 50px;
 }
-.contact-form h2 {
-    color: #007bff;
-    margin-bottom: 30px;
-}
-.form-control:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    transition: all 0.3s ease;
-}
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+
+.contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #18415a;
 }
 
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-card .form-label {
+    color: #18415a;
+    font-weight: 600;
+}
+
+.contact-card .form-control {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-card .form-control:focus {
+    border-color: #18415a;
+    box-shadow: 0 0 0 0.2rem rgba(24, 65, 90, 0.25);
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-contact {
+    background-color: #18415a;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-contact:hover {
+    background-color: #122c40;
+    transform: translateY(-2px);
+}
+
+
 /* ------------- Carrusel --------------- */
+
 
 /* Carrusel de dos mitades */
 .carousel-container {
     display: flex;
     width: 100%;
     height: 400px; /* Altura fija, puedes ajustarla */
-    background-color: #111;
+    background-color: #1a1c23;
+    border-bottom: 1px solid #fff; /* línea blanca */
 }
 
 /* Estilo para la parte izquierda con el carrusel */
@@ -205,7 +368,7 @@ body {
 .text-content {
     width: 50%;
     padding: 20px;
-    background-color: #111; /* Fondo oscuro para el texto */
+    background-color: #1a1c23; /* Fondo oscuro para el texto */
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -253,3 +416,157 @@ body {
         max-width: 100%;
     }
 }
+
+/* --------------------- Menu Desplegable ------------------------*/
+/* Enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Hover en los enlaces de navegación */
+.nav-links li a:hover {
+    color: #f0f0f0;
+    border-bottom: 2px solid #3a3e4e;
+}
+
+/* Dropdown (Espacio vertical)*/   
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1a1c23;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+  border-radius: 5px; /* Mantén esto si quieres esquinas redondeadas */
+  z-index: 1000;
+  overflow: hidden; /* Asegura que el fondo cubra bien */
+  
+}
+
+.dropdown-content li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de los enlaces dentro del dropdown (Espacio Horizontal) */   
+.dropdown-content a {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  background-color: #1a1c23;     /* Fondo base */
+  box-sizing: border-box;      /* Evita que el padding se desborde */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover dentro del dropdown */
+.dropdown-content a:hover {
+  background-color: #333;
+  color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Añadir efecto de sombreado en el enlace desplegado al pasar el cursor */
+.dropdown-content a:focus, .dropdown-content a:hover {
+  background-color: #3a3e4e; /* Fondo suave al pasar por encima */
+  color: #000; /* Cambiar texto a negro */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+
+
+/* ----------- Estilos para el contenedor "Lo más comprado" ------------------------ */
+.best-sellers {
+    background-color: #18415a;
+    color: #ffffff;
+    padding: 60px 20px;
+    border-bottom: 1px solid #fff; /* línea blanca */
+}
+
+.best-sellers .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.best-sellers .products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.best-sellers .product-item {
+    background-color: #2b2d36;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.best-sellers .product-item:hover {
+    transform: translateY(-5px);
+}
+
+.best-sellers .product-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.best-sellers .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.best-sellers .btn-add-to-cart {
+    background-color: #18415a;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.best-sellers .btn-add-to-cart:hover {
+    background-color: #122c40;
+}
+
+.best-sellers .btn-buy-now {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.best-sellers .btn-buy-now:hover {
+    background-color: #d28c3d;
+}
+
+
